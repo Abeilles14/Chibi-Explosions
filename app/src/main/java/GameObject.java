@@ -34,7 +34,7 @@ public abstract class GameObject {
     }
 
     protected Bitmap createSubImageAt(int row, int col){
-        //createBitmap(bitmap, x, y, width, height)
+        //createBitmap(bitmap, x, y, width, height) --> position in image
         Bitmap subImage = Bitmap.createBitmap(image,col*width, row*height, width, height);
         return subImage;
     }
