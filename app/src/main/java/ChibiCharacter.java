@@ -117,7 +117,7 @@ public class ChibiCharacter extends GameObject {
             } else if(movingVectorY < 0 && Math.abs(movingVectorX) < Math.abs(movingVectorY)){
                 this.rowUsing = ROW_BOTTOM_TO_TOP;
             } else {
-                this.rowUsing = ROW_LEFT_TO_RIGHT
+                this.rowUsing = ROW_LEFT_TO_RIGHT;
             }
         } else {
             if (movingVectorY > 0 && Math.abs(movingVectorX) < Math.abs(movingVectorY)) {
