@@ -14,10 +14,6 @@ public class MainActivity extends Activity {
 
         //hide title
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-<<<<<<< HEAD:app/src/main/java/MainActivity.java
         this.setContentView(new GameSurface(this));
-=======
-        this.setContentView(new GameSurface(this.))
->>>>>>> d6e2505ebfdcf17cece0cc2a90c8f7a7b337ad41:app/src/main/java/com/isabelle/androidgame2d/MainActivity.java
     }
 }
