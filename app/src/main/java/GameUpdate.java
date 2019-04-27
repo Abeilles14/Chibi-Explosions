@@ -1,16 +1,16 @@
-package com.isabelle.androidgame2d;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
+
 
 public class GameUpdate extends Thread{
     private boolean running;
     private GameSurface gameSurface;
     private SurfaceHolder surfaceHolder;
 
-    public GameThread(GameSurface gameSurface, SurfaceHolder surfaceHoler){
+    public GameUpdate(GameSurface gameSurface, SurfaceHolder surfaceHolder){
         this.gameSurface = gameSurface;
-        this.surfaceHolder = surfaceHoler;
+        this.surfaceHolder = surfaceHolder;
     }
 
     @Override
