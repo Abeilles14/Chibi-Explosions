@@ -1,13 +1,11 @@
+package com.isabelle.androidgame2d;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.Surface;
-
-import com.isabelle.androidgame2d.R;
 
 public class GameSurface extends SurfaceView implements SurfaceHolder.Callback {
     private GameUpdate gameUpdate;

@@ -1,6 +1,7 @@
 /*
  * simulates character in the game
  */
+package com.isabelle.androidgame2d;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

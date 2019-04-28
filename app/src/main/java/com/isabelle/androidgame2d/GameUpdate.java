@@ -1,6 +1,9 @@
+package com.isabelle.androidgame2d;
 
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
+
+import com.isabelle.androidgame2d.GameSurface;
 
 
 public class GameUpdate extends Thread{
@@ -40,8 +43,8 @@ public class GameUpdate extends Thread{
             //interval to redraw game
             //nano--> milli
             long waitTime = (now - startTime)/1000000;
-            if (waitTime <10){
-                waitTime =10;
+            if (waitTime <100){
+                waitTime =100;
             }
 
             try{

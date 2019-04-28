@@ -2,6 +2,9 @@
  * objects of the game is extended from this abstract class
  * Bitmap 3 columns, 4 rows
  */
+
+package com.isabelle.androidgame2d;
+
 import android.graphics.Bitmap;
 
 public abstract class GameObject {

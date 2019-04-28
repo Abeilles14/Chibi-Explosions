@@ -1,3 +1,4 @@
+package com.isabelle.androidgame2d;
 
 import android.app.Activity;
 import android.os.Bundle;
