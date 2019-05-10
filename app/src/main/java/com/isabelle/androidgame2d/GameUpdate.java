@@ -3,9 +3,6 @@ package com.isabelle.androidgame2d;
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
-import com.isabelle.androidgame2d.GameSurface;
-
-
 public class GameUpdate extends Thread{
     private boolean running;
     private GameSurface gameSurface;

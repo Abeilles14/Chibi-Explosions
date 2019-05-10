@@ -7,6 +7,8 @@ package com.isabelle.androidgame2d;
 
 import android.graphics.Bitmap;
 
+import java.io.File;
+
 public abstract class GameObject {
     protected Bitmap image;
 
@@ -34,6 +36,7 @@ public abstract class GameObject {
 
         this.width = this.WIDTH/colCount;       //width of character
         this.height = this.HEIGHT/rowCount;     //height of character
+
     }
 
     protected Bitmap createSubImageAt(int row, int col){

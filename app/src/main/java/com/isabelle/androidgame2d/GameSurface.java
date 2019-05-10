@@ -36,7 +36,6 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback {
 
         Bitmap chibiBitmap1 = BitmapFactory.decodeResource(this.getResources(), R.drawable.chibi_nusair);
         this.chibi_nusair = new ChibiCharacter(this, chibiBitmap1, 100, 50);
-
         this.gameUpdate = new GameUpdate(this, holder);
         this.gameUpdate.setRunning(true);
         this.gameUpdate.start();

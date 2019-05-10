@@ -5,6 +5,10 @@ package com.isabelle.androidgame2d;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 
 public class ChibiCharacter extends GameObject {
     private static final int ROW_TOP_TO_BOTTOM = 0;         //bitmap subImage rows actions
@@ -34,7 +38,6 @@ public class ChibiCharacter extends GameObject {
     //constructor
     public ChibiCharacter(GameSurface gameSurface, Bitmap image, int x, int y) {
         super(image, 4, 3, x, y);                   //main chara has 4 rows, 3 col, and width/height
-
         this.gameSurface = gameSurface;
 
         this.leftToRights = new Bitmap[colCount];       //assigns rows of chibi to moves
@@ -133,7 +136,17 @@ public class ChibiCharacter extends GameObject {
 
     public void draw(Canvas canvas) {
         Bitmap  bitmap = this.getCurrentMoveBitmap();
-        canvas.drawBitmap(bitmap,x,y,null);
+
+        //makes white pixels transparent.
+        for(int x=0; x<bitmap.getWidth(); x++){
+            for(int y=0; y<bitmap.getHeight(); y++){
+                if(bitmap.getPixel(x,y)==Color.WHITE){
+                    bitmap.setPixel(x,y, Color.TRANSPARENT);
+                }
+            }
+        }
+
+        canvas.drawBitmap(bitmap,x,y,null);    //null
         //last draw time
         this.lastDrawNanoTime = System.nanoTime();
     }
